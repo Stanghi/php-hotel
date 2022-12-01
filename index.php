@@ -37,11 +37,6 @@ $hotels = [
     ],
 ];
 
-if (!empty($_GET['toggleParking'])) {
-    echo "Ciao";
-} else {
-    echo "spento";
-}
 ?>
 
 <!DOCTYPE html>
@@ -61,14 +56,6 @@ if (!empty($_GET['toggleParking'])) {
 
 <body>
     <div class="container">
-
-        <form action="./index.php" method="GET">
-            <div class="form-check form-switch">
-                <input name="toggleParking" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-                <label class="form-check-label" for="flexSwitchCheckDefault">Parking</label>
-            </div>
-        </form>
-
         <table class="table">
             <thead>
                 <tr>
@@ -89,7 +76,6 @@ if (!empty($_GET['toggleParking'])) {
                     echo "</tr>";
                 }
                 ?>
-
             </tbody>
         </table>
     </div>
